@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 Just running `space_insta.py`. In `space_insta.py` was wroted example parameters for testing running.
 
-### References.
+### References
 
 [SpaceX API](https://github.com/r-spacex/SpaceX-API).
 
