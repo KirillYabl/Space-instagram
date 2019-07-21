@@ -4,7 +4,11 @@ These project can help you if you need load pictures from SpaceX and Hubble and 
 
 ### How to install
 
-You need to create `.env` file and write in file your login in `INSTALOGIN` param and your password in `INSTAPASSWORD` param.
+You need to create `.env` file and write in file your login in `INSTALOGIN` param and your password in `INSTAPASSWORD` param like:
+```
+INSTALOGIN=MY_LOGIN
+INSTAPASSWORD=MY_PASSWORD
+```
 
 Python3 should be already installed. 
 Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
