@@ -18,8 +18,8 @@ Just running `space_insta.py`. In `space_insta.py` was wroted example parameters
 
 ### References.
 
-[SpaceX API] (https://github.com/r-spacex/SpaceX-API).
-[Hubble API] (http://hubblesite.org/api/documentation).
+[SpaceX API](https://github.com/r-spacex/SpaceX-API).
+[Hubble API](http://hubblesite.org/api/documentation).
 
 ### Project Goals
 
