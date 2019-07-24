@@ -24,13 +24,13 @@ Open command line (in windows `Win+R` and write `cmd` and `Ok`). Go to directory
 
 where:
 
-	`dir` - Directory, where you can save images. Directory will be created if not exists
+	dir - Directory, where you can save images. Directory will be created if not exists
 	
-	`insta_post` - Post images to instagram? True or False
+	insta_post - Post images to instagram? True or False
 	
-	`launch_num` - SpaceX number of launch. If none images don''t be loaded from SpaceX (optional)
+	launch_num - SpaceX number of launch. If none images don''t be loaded from SpaceX (optional)
 	
-	`collection_name` - Hubble collection name. If none images don''t be loaded from Hubble (optional)
+	collection_name - Hubble collection name. If none images don''t be loaded from Hubble (optional)
 
 For helping you can write in cmd:
 
