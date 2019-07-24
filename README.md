@@ -18,7 +18,23 @@ pip install -r requirements.txt
 
 ### How to use
 
-Just running `space_insta.py`. In `space_insta.py` was wroted example parameters for testing running.
+Open command line (in windows `Win+R` and write `cmd` and `Ok`). Go to directory with program or just write in cmd:
+
+`python <PATH TO PROGRAM>\space_insta.py --dir dir --insta_post insta_post [--launch_num launch_num] [--collection_name collection_name]`
+
+where:
+
+	`dir` - Directory, where you can save images. Directory will be created if not exists
+	
+	`insta_post` - Post images to instagram? True or False
+	
+	`launch_num` - SpaceX number of launch. If none images don''t be loaded from SpaceX (optional)
+	
+	`collection_name` - Hubble collection name. If none images don''t be loaded from Hubble (optional)
+
+For helping you can write in cmd:
+
+`python <PATH TO PROGRAM>\space_insta.py -h`
 
 ### References
 

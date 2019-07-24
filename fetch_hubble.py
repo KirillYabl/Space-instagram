@@ -25,10 +25,14 @@ def fetch_hubble_imgs_by_id(directory, img_id, save_last=True):
     imgs_urls_extensions = []
 
     response = requests.get(url)
-    hubble_images = response.json()['image_files']
 
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+    # check HTTPError
+    response.raise_for_status()
+    # some sites can return 200 and write error in body
+    if 'error' in response:
+        raise requests.exceptions.HTTPError(response['error'])
+
+    hubble_images = response.json()['image_files']
 
     for hubble_img in hubble_images:
         img_url = hubble_img['file_url']
@@ -72,7 +76,13 @@ def fetch_hubble_imgs_from_collection(directory, collection_name, save_last=True
     url = f'http://hubblesite.org/api/v3/images/{collection_name}'
     response = requests.get(url)
 
-    collections_ids = list(map(lambda x: x['id'], response.json()))
+    # check HTTPError
+    response.raise_for_status()
+    # some sites can return 200 and write error in body
+    if 'error' in response:
+        raise requests.exceptions.HTTPError(response['error'])
+
+    collections_ids = [img_info['id'] for img_info in response.json()]
     collection_len = len(collections_ids)
 
     print(f'The size of collection: {collection_len} images')
